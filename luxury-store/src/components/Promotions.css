@@ -1,0 +1,84 @@
+.promotions-section {
+  padding: 80px 0;
+  background: white;
+}
+
+.promotions-section .container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.promotions-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 24px;
+  margin-top: 60px;
+}
+
+.promo-card {
+  padding: 48px 32px;
+  border-radius: 8px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  transition: all 0.3s;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.promo-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+}
+
+.promo-title {
+  font-size: 22px;
+  font-weight: 700;
+  color: #2c2c2c;
+  margin: 0;
+  letter-spacing: 0.5px;
+}
+
+.promo-description {
+  font-size: 16px;
+  color: #6b6b6b;
+  margin: 0;
+  font-weight: 500;
+}
+
+.promo-btn {
+  margin-top: 8px;
+  padding: 12px 32px;
+  background: #2c2c2c;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.promo-btn:hover {
+  background: #1a1a1a;
+  transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+  .promotions-section {
+    padding: 60px 0;
+  }
+
+  .promotions-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .promo-card {
+    padding: 36px 24px;
+  }
+}
